@@ -6,8 +6,16 @@
     <title>Tashini Hotel | Luxury & Comfort</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
-<link rel="manifest" href="manifest.json"><script src="install.js"></script></head>
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#d4af37">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="TASHINI HOTEL">
+    <link rel="apple-touch-icon" href="images/tashini-icon.svg">
+    <script src="install.js"></script>
+</head>
 <body>
+    <div id="installBanner" class="install-banner hidden"></div>
     <!-- Navigation -->
     <nav class="navbar">
         <div class="logo">TASHINI</div>
@@ -30,7 +38,10 @@
         <div class="hero-content">
             <h1>Experience Pure Serenity</h1>
             <p>Your perfect escape in luxury and comfort at Tashini Hotel.</p>
-            <a href="rooms.html" class="btn">Book Your Stay</a>
+                <div class="hero-actions">
+                    <a href="rooms.html" class="btn">Book Your Stay</a>
+                    <button id="installPageBtn" class="btn install-page-btn hidden">Install App</button>
+                </div>
         </div>
     </header>
 
