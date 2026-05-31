@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rooms & Suites | Tashini Hotel</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        .page-header { background-image: url('images/room.png'); height: 50vh; display: flex; align-items: center; justify-content: center; position: relative; color: white; background-size: cover; background-position: center; }
+        .page-header::after { content: ''; position: absolute; top:0; left:0; right:0; bottom:0; background: rgba(0,0,0,0.4); z-index: 1; }
+        .page-header h1 { position: relative; z-index: 2; font-size: 3.5rem; text-shadow: 2px 2px 5px rgba(0,0,0,0.5); }
+    </style>
+<link rel="manifest" href="manifest.json"><script src="install.js"></script></head>
+<body>
+    <nav class="navbar">
+        <div class="logo">TASHINI</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="rooms.html" class="active">Rooms</a></li>
+            <li><a href="dining.html">Dining</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="burger"><div class="line1"></div><div class="line2"></div><div class="line3"></div></div>
+    </nav>
+
+    <header class="page-header">
+        <h1>Rooms & Suites</h1>
+    </header>
+
+    <section class="featured-rooms">
+        <h2>Find Your Perfect Sanctuary</h2>
+        <div class="room-grid">
+            <div class="room-card">
+                <img src="images/room.png" alt="Standard Room">
+                <div class="room-info">
+                    <h3>Classic Room</h3>
+                    <p>Comfortable, bright, and elegantly styled. Perfect for solo travelers or couples.</p>
+                    <p><strong>From $150 / night</strong></p>
+                    <br>
+                    <a href="contact.html" class="btn-secondary">Book Now</a>
+                </div>
+            </div>
+            <div class="room-card">
+                <img src="images/room.png" alt="Deluxe Room">
+                <div class="room-info">
+                    <h3>Deluxe Family Room</h3>
+                    <p>Spacious accommodations with two queen beds, a sitting area, and beautiful views.</p>
+                    <p><strong>From $250 / night</strong></p>
+                    <br>
+                    <a href="contact.html" class="btn-secondary">Book Now</a>
+                </div>
+            </div>
+            <div class="room-card">
+                <img src="images/room.png" alt="Luxury Suite">
+                <div class="room-info">
+                    <h3>Premium Luxury Suite</h3>
+                    <p>The ultimate indulgence. Separate living area, king bed, and a private balcony.</p>
+                    <p><strong>From $450 / night</strong></p>
+                    <br>
+                    <a href="contact.html" class="btn-secondary">Book Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="brand">
+                <h3>TASHINI HOTEL</h3>
+                <p>123 Serenity Lane, Kandy, Sri Lanka</p>
+                <p>Email: info@tashinihotel.com | Tel: +94 123 456 789</p>
+            </div>
+        </div>
+        <div class="copyright"><p>&copy; 2026 Tashini Hotel. All rights reserved.</p></div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

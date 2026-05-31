@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Tashini Hotel</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        .page-header { background-color: var(--primary-color); height: 40vh; display: flex; align-items: center; justify-content: center; color: white; }
+        .page-header h1 { font-size: 3.5rem; }
+        
+        .contact-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            max-width: 1000px;
+            margin: 4rem auto;
+            padding: 0 5%;
+        }
+        @media (max-width: 768px) { .contact-container { grid-template-columns: 1fr; } }
+        
+        .contact-form { background: #fff; padding: 3rem; border-radius: 5px; box-shadow: 0 5px 20px rgba(0,0,0,0.05); }
+        .contact-form h2 { margin-bottom: 2rem; color: var(--primary-color); }
+        .form-group { margin-bottom: 1.5rem; }
+        .form-group label { display: block; margin-bottom: 0.5rem; font-weight: 600; font-size: 0.9rem; }
+        .form-group input, .form-group textarea {
+            width: 100%; padding: 0.8rem; border: 1px solid #ddd; border-radius: 3px; font-family: var(--font-body); outline: none; transition: border 0.3s;
+        }
+        .form-group input:focus, .form-group textarea:focus { border-color: var(--accent-color); }
+        
+        .contact-info { padding-top: 1rem; }
+        .contact-info h3 { color: var(--primary-color); margin-bottom: 1rem; }
+        .contact-info p { margin-bottom: 1rem; color: #555; }
+    </style>
+<link rel="manifest" href="manifest.json"><script src="install.js"></script></head>
+<body>
+    <nav class="navbar">
+        <div class="logo">TASHINI</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="rooms.html">Rooms</a></li>
+            <li><a href="dining.html">Dining</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+        <div class="burger"><div class="line1"></div><div class="line2"></div><div class="line3"></div></div>
+    </nav>
+
+    <header class="page-header">
+        <h1>Get in Touch</h1>
+    </header>
+
+    <div class="contact-container">
+        <div class="contact-form">
+            <h2>Send a Message</h2>
+            <form action="#" method="POST" onsubmit="event.preventDefault(); alert('Message Sent Successfully!');">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" required placeholder="John Doe">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" required placeholder="john@example.com">
+                </div>
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" placeholder="Room Inquiry">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" rows="5" required placeholder="How can we assist you?"></textarea>
+                </div>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </div>
+        
+        <div class="contact-info">
+            <h3>Contact Information</h3>
+            <p><strong>Address:</strong><br>123 Serenity Lane,<br>Kandy, Sri Lanka</p>
+            <p><strong>Phone:</strong><br>+94 123 456 789<br>+94 987 654 321</p>
+            <p><strong>Email:</strong><br>info@tashinihotel.com<br>reservations@tashinihotel.com</p>
+            
+            <h3 style="margin-top: 3rem;">Operating Hours</h3>
+            <p>Reception: 24/7 Support<br>Restaurant: 6:00 AM - 11:00 PM</p>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="brand">
+                <h3>TASHINI HOTEL</h3>
+                <p>123 Serenity Lane, Kandy, Sri Lanka</p>
+                <p>Email: info@tashinihotel.com | Tel: +94 123 456 789</p>
+            </div>
+        </div>
+        <div class="copyright"><p>&copy; 2026 Tashini Hotel. All rights reserved.</p></div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
